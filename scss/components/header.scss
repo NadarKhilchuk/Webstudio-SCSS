@@ -1,0 +1,200 @@
+@import '../base/variables.scss';
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 100px;
+    // .header__container
+
+    &__container {
+        display: flex;
+        gap: 93px;
+    }
+
+    // .header__block
+
+    &__block {
+
+        // .header__block-logo
+
+        &-logo {
+            text-decoration: none;
+            font-size: 26px;
+            font-family: 'Raleway', sans-serif;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 115px;
+            &>span {
+                text-decoration: none;
+                color: #2196F3;
+                font-family: 'Raleway' sans-serif;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.78px;
+            }
+            &>b {
+                text-decoration: none;
+                color: #FFF;
+                font-family: 'Raleway' sans-serif;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.78px;
+            }
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+        color: $textColor;
+    }
+
+    // .header__span
+
+    &__span {
+        color: $hoverColor;
+    }
+
+    // .header__navigation
+
+    &__navigation {
+    }
+
+    // .header__list
+
+    &__list {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        text-decoration: none;
+        color: $linkColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        transition: all 0.3s ease 0s;
+        justify-content: space-around;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    // .header__item
+
+    &__item {
+    }
+
+    // .header__link
+
+    &__link {
+    }
+
+    // .header__information
+
+    &__information {
+        display: flex;
+        gap: 30px;
+        padding-top: 32px;
+      padding-left: 318px;
+    }
+
+    // .header__info
+
+    &__info {
+        color: $infoPhoneColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+
+        &>svg  {
+            width: 16px;
+            height: 12px;
+        }
+        // .header-home__info-item
+
+        &-item {
+            transition: all 0.3s ease 0s;
+            &:hover{ 
+                color: $hoverColor;
+                fill: $hoverColor;
+            }
+        // .header__info-item
+
+        &-item {
+        }
+
+        // .header__info-link
+
+        &-link {
+            color: $linkColor;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.28px;
+          transition: all 0.3s ease 0s;
+          
+          position: relative;
+          &:hover {
+            color: $hoverColor;
+          }
+
+          &:hover:after,
+          &:focus:after {
+              width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+          }
+          &:hover {
+            color: $hoverColor;
+        }
+        }
+
+        // .header__info-number
+
+        &-number {
+            display: flex;
+            color: $infoPhoneColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            &>svg {
+                width: 10px;
+                height: 16px;
+            }
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}
+.active {
+    
+    &::after {
+        display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 100%;/*задаём длинну линии до наведения курсора*/
+	height: 5px; /*задаём ширину линии*/
+	background-color: $hoverColor; /*задаём цвет линии*/
+	content: '';
+	transition: width 0.2s ease-out; /*задаём время анимации*/
+  border-radius: 10px;
+  margin-top: 28px;
+    }
+}
+}
