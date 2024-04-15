@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <header class="header">
     <div class="header__container container">
   <div class="header__block-logo">
-       <a class="header__logo" href="/"><span class="header__span">Web</span>Studio</a>
+       <a class="header__logo" href="/">
+        <span class="header__span">Web</span>Studio</a>
   </div>
     <nav class="header__navigation">
     <ul class="header__list">
@@ -140,19 +141,38 @@
           <h2 class="overlord-home-title-h2">Чим ми займаємося</h2>
              <ul class="overlord-home-list">
                 <li class="overlord-home-item">
-                <img class="overlord-home-photo" src="./img/computer1.png" alt="computer" width="370" height="294"> 
+                  <picture>
+                    <source  srcset=" 
+                    ./img/computer1-desktop@1x.jpg 1x, 
+                    ./img/computer1-desktop@2x.jpg 2x 
+                    " media="(min-width: 1200px)"> 
+                    <img class="overlord-home-photo" src="./img/computer1-desktop@1x.jpg" alt="computer-1" width="370" height="294"> 
+                  </picture>
                 <div class="overlord-home-overlay">
                 <p class="overlord-home-text">Десктопні додатки</p>
               </div>
               </li>
               <li class="overlord-home-item">
-                 <img class="overlord-home-photo" src="./img/computer2.png" alt="comp" width="370" height="294">
+                <picture>
+                  <source  srcset=" 
+                  ./img/computer1-desktop@1x.jpg 1x, 
+                  ./img/computer1-desktop@2x.jpg 2x 
+                  " media="(min-width: 1200px)"> 
+                  <img class="overlord-home-photo" src="./img/computer2-desktop@1x.jpg" alt="computer-2" width="370" height="294">
+                </picture>
                  <div class="overlord-home-overlay">
                  <p class="overlord-home-text">Мобільні додатки</p>
                 </div>
                 </li>
                  <li class="overlord-home-item">
-               <img class="overlord-home-photo" src="./img/computer3.png" alt="comput" width="370" height="294">
+                  <picture>
+                    <source  srcset=" 
+                    ./img/computer3-desktop@1x.jpg 1x, 
+                    ./img/computer3-desktop@2x.jpg 2x 
+                    " media="(min-width: 1200px)"> 
+                    <img class="overlord-home-photo" src="./img/computer3-desktop@1x.jpg" alt="computer-3" width="370" height="294">
+                  </picture>
+
                <div class="overlord-home-overlay">
                <p class="overlord-home-text">Дизайнерські рішення</p>
               </div>
@@ -164,7 +184,12 @@
  <h2 class="hydra-home-title-team">Наша команда</h2>
 <ul class="hydra-home-list">
     <li class="hydra-home-item">
-      <img class="hydra-home-photo-team" src="./img/1gor.png" alt="Igor"width="270" height="260">
+      <picture>
+        <source srcset="
+        ./img/computer3-desktop@1x.jpg 1x,
+        ./img/computer3-desktop@2x.jpg 2x" media="min-width:1200px">
+        <img class="hydra-home-photo-team" src="./img/1gor-desktop@1x.jpg" alt="Igor"width="270" height="260">
+      </picture>
       <h4 class="hydra-home-title">Ігор Дем'яненко</h4>
     <h5 class="hydra-home-description">Product Designer</h5>
     <ul class="hydra-home-logo-list">
@@ -198,7 +223,13 @@
     </ul>
     </li>
     <li class="hydra-home-item">
-      <img class="hydra-home-photo-team" src="./img/2olga.png" alt="Olga"width="270" height="260">
+      
+      <picture>
+        <source srcset="
+        ./img/2olga-desktop@1x.jpg 1x,
+        ./img/2olga-desktop@2x.jpg 2x" media="min-width:1200px">
+        <img class="hydra-home-photo-team" src="./img/2olga-desktop@1x.jpg" alt="Olga"width="270" height="260">
+      </picture>
       <h4 class="hydra-home-title">Ольга Рєпіна</h4>
     <h5 class="hydra-home-description">Frontend Developer</h5>
     <ul class="hydra-home-logo-list">
@@ -232,7 +263,13 @@
     </ul>
     </li>      
     <li class="hydra-home-item">
-      <img class="hydra-home-photo-team" src="./img/3kola.png" alt="Mykola"width="270" height="260">
+      
+      <picture>
+        <source srcset="
+        ./img/3kola-desktop@1.jpg 1x,
+        ./img/3kola-desktop@2.jpg 2x" media="min-width:1200px">
+        <img class="hydra-home-photo-team" src="./img/3kola-desktop@1.jpg" alt="Mykola"width="270" height="260">
+      </picture>
       <h4 class="hydra-home-title">Микола Тарасов</h4>
    <h5 class="hydra-home-description">Marketing</h5>
    <ul class="hydra-home-logo-list">
@@ -266,7 +303,13 @@
   </ul>
     </li>
     <li class="hydra-home-item">
-      <img class="hydra-home-photo-team" src="./img/4misha.png" alt="Misha"width="270" height="260">
+      <picture>
+        <source srcset="
+        ./img/4misha-desktop@1x.jpg 1x,
+        ./img/4misha-desktop@2x.jpg 2x
+        " media="min-width: 1200px">
+      <img class="hydra-home-photo-team" src="./img/4misha-desktop@1x.jpg" alt="Misha"width="270" height="260">
+    </picture>
       <h4 class="hydra-home-title">Михайло Єрмаков</h4>
      <h5 class="hydra-home-description">UI Designer</h5>
      <ul class="hydra-home-logo-list">
@@ -413,44 +456,44 @@
         </div>
       </section>
     </main>
-    <footer class="footer footer-home">
-      <div class="footer-home-container container">
-        <div class="footer-home-left">
-      <div class="footer-home-logos">
-        <a class="footer-home-logo" href="/"><span class="footer-home-span">Web</span>Studio</a>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__left">
+      <div class="footer__block-logo">
+        <a class="footer__logo" href="/"><span class="footer__span">Web</span>Studio</a>
    </div>
-          <ul class="footer-home-list">
-             <li class="footer-home-item"><p class="footer-home-description-text">Київ, пр-т Лесі Українки, 26</p></li>
-             <li class="footer-home-item"><p class="footer-home-description-p"><a href="mailto:example@mail.ua" class="footer-home-info-email" target="_blank">info@devstudio.com</a></p></li>
-             <li class="footer-home-item"><p class="footer-home-description-p"><a href="tel:++380961111111" class="footer-home-info-number" target="_blank">+38 096 111 11 11</a></p></li>
+          <ul class="footer__list">
+             <li class="footer__item"><p class="footer__description-text">Київ, пр-т Лесі Українки, 26</p></li>
+             <li class="footer__item"><p class="footer__description-p"><a href="mailto:example@mail.ua" class="footer__info-email" target="_blank">info@devstudio.com</a></p></li>
+             <li class="footer__item"><p class="footer__description-p"><a href="tel:++380961111111" class="footer__info-number" target="_blank">+38 096 111 11 11</a></p></li>
           </ul>
         </div>
-          <div class="footer-home-logotyp-block">
-          <h3 class="footer-home-title-logo">приєднуйтесь</h3>
-          <ul class="footer-home-logotyp-list">
-            <li class="footer-home-logotyp-item">
-              <a href="" class="footer-home-logotyp-link">
+          <div class="footer__logotyp-block">
+          <h3 class="footer__title-logo">приєднуйтесь</h3>
+          <ul class="footer__logotyp-list">
+            <li class="footer__logotyp-item">
+              <a href="#" class="footer__logotyp-link">
                 <svg>
                   <use href="./img/logo-instagram.svg#logo-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-home-logotyp-item">
-              <a href="" class="footer-home-logotyp-link">
+            <li class="footer__logotyp-item">
+              <a href="#" class="footer__logotyp-link">
                 <svg>
                   <use href="./img/logo-twitter.svg#logo-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-home-logotyp-item">
-              <a href="" class="footer-home-logotyp-link">
+            <li class="footer__logotyp-item">
+              <a href="#" class="footer__logotyp-link">
                 <svg>
                   <use href="./img/logo-facebook.svg#logo-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-home-logotyp-item">
-              <a href="" class="footer-home-logotyp-link">
+            <li class="footer__logotyp-item">
+              <a href="#" class="footer__logotyp-link">
                 <svg>
                   <use href="./img/logo-linkedin.svg#logo-linkedin"></use>
                 </svg>
@@ -458,11 +501,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer-home-right"> 
-          <h6 class="footer-home-title-h6">Підпишіться на розсилку</h6>
-          <div class="footer-home-right-block">
-            <input type="text" class="footer-home-input" placeholder="E-mail">
-            <button class="footer-home-button">Підписатися<img class="footer-home-button-img" src="./img/symbol-tg.svg" alt=""></button>
+        <div class="footer__right"> 
+          <h6 class="footer__title-h6">Підпишіться на розсилку</h6>
+          <div class="footer__right-block">
+            <input type="text" class="footer__input" placeholder="E-mail">
+            <button class="footer__button">Підписатися<img class="footer__button-img" src="./img/symbol-tg.svg" alt=""></button>
           </div>
         </div>
       </div>

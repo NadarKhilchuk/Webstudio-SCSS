@@ -1,13 +1,5 @@
-@charset "UTF-8";
 .header {
-  font-family: "Roboto", sans-serif;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.48px;
-  margin-bottom: 100px;
+  background-color: #2196F3;
 }
 .header__container {
   display: flex;
@@ -33,7 +25,7 @@
 }
 .header__block-logo > b {
   text-decoration: none;
-  color: #FFF;
+  color: #ffffff;
   font-family: "Raleway" sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -105,7 +97,7 @@
   color: #2196F3;
 }
 .header__info-item-link:hover:after, .header__info-item-link:focus:after {
-  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  width: 100%;
 }
 .header__info-item-link:hover {
   color: #2196F3;
@@ -129,12 +121,12 @@
 .header .active::after {
   display: block;
   position: absolute;
-  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 100%; /*задаём длинну линии до наведения курсора*/
-  height: 5px; /*задаём ширину линии*/
-  background-color: #2196F3; /*задаём цвет линии*/
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #2196F3;
   content: "";
-  transition: width 0.2s ease-out; /*задаём время анимации*/
+  transition: width 0.2s ease-out;
   border-radius: 10px;
   margin-top: 28px;
 }
